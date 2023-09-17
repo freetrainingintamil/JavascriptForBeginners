@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Session Part 01</title>
+</head>
+<body>
+    <script>
+        // Javascript Array Concepts (2 Types Of Array Declaration)
+        var fruits = ["apple", "banana", "cherry"];
+        var fruitsNew = new Array("apple", 1, "cherry");
+        document.write("Fruits 1 : " + fruits[0] + "<br />");
+        document.write("Fruits 2 : " + fruits[1] + "<br />");
+        document.write("Fruits 3 : " + fruits[2]);
+        console.log("Fruits 1 : " + fruitsNew[0])
+        console.log("Fruits 2 : " + fruitsNew[1])
+        console.log("Fruits 3 : " + fruitsNew[2])
+
+        // Output
+        // Fruits 1 : apple
+        // Fruits 2 : 1
+        // Fruits 3 : cherry
+
+
+
+        // Javascript Datatypes
+
+        // String
+        var x = "Free Training in Tamil";
+        console.log(x);
+
+        // Output
+        // Free Training in Tamil
+
+
+
+        // Number
+        var y = 10;
+        console.log(y);
+
+        // Output
+        // 10
+
+
+
+        // Undefined
+        var z;
+        console.log(z);
+
+        // Output
+        // undefined
+
+
+
+        // Null
+        var z = null;
+        console.log(z);
+
+        // Output
+        // null
+
+
+
+        // {} Object
+        var a = {name:"Google", age:20};
+        console.log(a);
+
+        // Output
+        // {name: 'Google', age: 20}
+
+
+
+        // [] Array
+        var b = ["apple", "banana", "cherry"];
+        console.log(b);
+        
+        // Output
+        // ['apple', 'banana', 'cherry']
+
+        console.log(typeof(b)); // Checking Type of variable
+        // Output
+        // object
+
+
+        // Global Scope and Local/Function Scope
+        
+        var e = 10;
+        console.log("Global Scope", e);
+        function test() {
+            var e = 20;
+            console.log("Local/Function Scope", e);
+        }
+        test();
+        console.log("Global Scope", e);
+
+        // Output
+        // Global Scope 10
+        // Local/Function Scope 20
+        // Global Scope 10
+
+
+
+        // Conditional Statement if else
+
+        var age = 20;
+        if(age == 30) {
+            console.log("You are an Adult");
+        } else if (age == 20) {
+            console.log("You are an Adult and Age is 20");
+        } 
+        else {
+            console.log("You are not an Adult");
+        }
+
+        // Output
+        // You are an Adult and Age is 20
+
+
+        // Conditional Statement Switch Case
+
+
+        var day  = "Sunday";
+        switch (day) {
+            case "Monday":
+            console.log("Weekday Started");
+            break;
+            case "Friday":
+            console.log("Weekend Started");
+            break;
+            default:
+            console.log("Regular Day Started");
+        }
+
+        // Output
+        // Regular Day Started
+
+
+
+        // Equality Operators
+
+
+        var k = 20;
+        // = is Assignment Operator
+
+
+
+        // == (double equals)
+        // number == "number" (number == string)
+
+        // Output
+        // True
+
+
+
+        // === (triple equals)
+        // number == "number" (number === string)
+        // This one checks data types Left one is number and right one is string so it's false
+
+        // Output
+        // False
+
+
+        // Example Equality Operator
+
+        var m = 2;
+        var n = "2";
+        console.log("Type of m : " + typeof(m));
+        console.log("Type of n : " + typeof(n));
+        // If you change if condition with == the output will be true
+        if (m === n) {
+            console.log("True");
+        } else {
+            console.log("False");
+        }
+
+        // Output
+        // False
+
+    </script>
+</body>
+</html>
